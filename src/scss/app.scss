@@ -1,0 +1,14 @@
+@import"base/normalize";
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
+@import "base/mixins";
+@import "base/variables";
+@import "base/globales";
+
+@import"layout/header";
+@import"layout/principal";
+@import"layout/servicios";
+@import"layout/equipo";
+@import"layout/flexslider";
+@import"layout/font-awesome";
+@import"layout/formulario";
+@import"layout/footer";

@@ -1,0 +1,67 @@
+.nav-bg{
+    background-color: $secundario;
+    padding: 0.1rem;
+
+    .titulo{
+        text-align: center;
+        font-size: 5rem;
+        font-weight: $delgada;
+
+        span{
+            color: $blanco;
+            font-weight: $delgada;
+            font-size: 3rem;
+        }
+    }
+}
+
+.navegaciones{
+    display: flex;
+    flex-direction: column;
+
+    
+    
+}
+
+.navegacion-principal{
+
+    @include desktop{
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        justify-content: space-evenly;
+        margin-bottom: 0;
+    
+        a{
+            display: row;
+            padding: 1rem;
+        }
+    }
+
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
+    a{
+        font-size: 2.5rem;
+        display: block;
+        text-align: center;
+        
+
+        &:hover{
+            background-color: $primario;
+            color: #000000;
+            
+        }
+        
+    }
+
+    
+    
+}
+
+
+
+

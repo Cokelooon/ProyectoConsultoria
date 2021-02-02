@@ -1,0 +1,45 @@
+.servicios{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.servicios-principales{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+    .anuncio { /*Es para centrar imagenes y achicar imagenes */
+        flex-shrink: 0; /*Con este comando, hago que las fotos no se encojan */
+        flex-basis: calc(33.3% - 1rem);
+        flex-grow: 0;
+        border: 1px solid #B5B5B5;
+        background-color: #f5f5f5;
+        margin-bottom: 2rem;
+        
+        .imagenes{
+            height: 300px;
+            width: 100%;
+        }
+    }
+        h3{
+            margin: 0;
+            margin-top: 1rem;
+        }
+
+        p{
+            line-height: 1.5;
+            font-family: $fuentePrincipal;
+            margin: 1rem;
+        }
+
+    @include tablet{
+            flex-direction: row;
+        
+        
+    
+        
+    }
+
+
+}

@@ -1,0 +1,35 @@
+.equipo{
+    background-image: url("/src/img/grande/startup-594091_1280.jpg");
+    margin-top: 8rem;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    align-items: center;
+    
+    
+
+    .equipo__texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        color: $blanco;
+        font-weight: 400;
+        font-size: 12rem;
+        position: relative; 
+        background-color: rgba(0,0,0,.1);
+        z-index: 1;
+        text-align: center;
+    }
+
+}
+
+@include telefono{
+    .equipo__texto{
+        font-size: auto;
+    }
+}

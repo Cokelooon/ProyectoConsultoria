@@ -1,0 +1,172 @@
+.error{
+    background-color: rgb(185,0,0);
+    text-align: center;
+    padding: 1rem;
+    color: $blanco;
+    font-size: bold;
+    text-transform: uppercase;
+
+}
+
+.correcto{
+    background-color: rgb(74,185,0);
+    text-align: center;
+    padding: 1rem;
+    color: $blanco;
+    font-size: bold;
+    text-transform: uppercase;
+}
+.contacto-bg {
+    background-image: url(/src/img/grande/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario {
+    background-color: $blanco;
+    margin: -5rem auto 0 auto;
+    width: 80%;
+    padding: 5rem;
+}
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.campo__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+    font-size: 2rem;
+}
+
+
+.nombre,
+.email {
+    flex: 1;
+    border: 1px solid $gris;
+    width: 95%;
+}
+
+.mensaje {
+    height: 20rem;
+    flex: 1; 
+}
+
+.boton {
+    display: block;
+    // font-family: var(--fuenteHeading);
+    color: $blanco;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border:2px solid #000000;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+.boton--primario {
+    background-color: $secundario;
+}
+
+.contacto{
+    h3{
+        text-align: center;
+        color: #000000;
+        font-size: 5rem;
+        font-weight: 400;
+
+    }
+}
+
+
+@include telefono{
+    .nombre,
+    .email{
+        width: 95%;
+    }
+}
+
+@include tablet{
+    .contacto{
+        h3{
+            text-align: center;
+            color: #000000;
+            font-size: 5rem;
+            font-weight: 400;
+    
+        }
+    }
+    .formulario {
+        background-color: $blanco;
+        margin: -5rem auto 0 auto;
+        width: 80%;
+        padding: 5rem;
+    }
+    .campo {
+        display: flex;
+        margin-bottom: 2rem;
+
+        .campo__label {
+            flex: 0 0 9rem;
+            text-align: right;
+            padding-right: 2rem;
+            font-size: 2rem;
+        }
+    }
+    .nombre,
+    .email {
+    flex: 1;
+    border: 1px solid $gris;
+    }
+
+    .mensaje {
+    height: 20rem;
+    flex: 1; 
+    }
+}
+
+@include desktop{
+    .contacto{
+        h3{
+            text-align: center;
+            color: #000000;
+            font-size: 5rem;
+            font-weight: 400;
+    
+        }
+    }
+    .formulario {
+        background-color: $blanco;
+        margin: -5rem auto 0 auto;
+        width: 80%;
+        padding: 5rem;
+    }
+
+    .campo {
+        display: flex;
+        margin-bottom: 2rem;
+
+        .campo__label {
+            flex: 0 0 9rem;
+            text-align: right;
+            padding-right: 2rem;
+            font-size: 2rem;
+        }
+    }
+    .nombre,
+    .email {
+    flex: 1;
+    border: 1px solid $gris;
+    }
+
+    .mensaje {
+    height: 20rem;
+    flex: 1;    
+    }
+
+}
